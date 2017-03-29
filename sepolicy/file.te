@@ -3,6 +3,7 @@ type fsg_file, fs_type, contextmount_type;
 
 #Greybus
 type sysfs_greybus, fs_type, sysfs_type, mlstrustedobject;
+type gbfirmware_file, file_type, data_file_type, mlstrustedobject;
 
 # RIL
 type netmgr_data_file, file_type, data_file_type;
