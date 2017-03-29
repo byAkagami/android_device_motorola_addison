@@ -411,6 +411,14 @@ service qseecomd /system/bin/qseecomd
    user root
    group root
 
+service mods_camd /system/bin/mods_camd
+    class late_start
+    user camera
+    group camera system inet input graphics
+    rlimit 14 4 4
+    ioprio rt 4
+    disabled
+
 service thermal-engine /system/vendor/bin/thermal-engine
    class main
    user root
