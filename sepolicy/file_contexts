@@ -19,6 +19,18 @@
 /data/fpc                                                u:object_r:fingerprintd_data_file:s0
 /sys/devices/soc/7af8000\.spi/spi_master/spi8/spi8\.0(/.*)?  u:object_r:sysfs_mmi_fp:s0
 
+#Greybus
+/sys/bus/greybus(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/class/i2c-adapter/i2c-2/2-002d/enable                     u:object_r:sysfs_greybus:s0
+/sys/class/power_supply/usb/usb_priority                     u:object_r:sysfs_greybus:s0
+/sys/devices/soc/soc:muc_svc@0(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/devices/platform/mods_ap(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/devices/soc/0.apba_ctrl(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/module/qpnp_smbcharger_mmi/parameters(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/devices/platform/mods_codec.0(/.*)?                     u:object_r:sysfs_greybus:s0
+/sys/devices/virtual/video4linux                     u:object_r:sysfs_greybus:s0
+
+
 # mmi_touch related /sys files
 /sys/devices/soc/78b7000\.i2c/i2c-3/3-0020(/.*)?         u:object_r:sysfs_mmi_touch:s0
 

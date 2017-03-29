@@ -1,0 +1,3 @@
+allow platform_app sysfs_greybus:dir { open read search };
+allow platform_app sysfs_greybus:file { getattr open read write };
+allow platform_app sysfs_greybus:lnk_file { getattr read };
