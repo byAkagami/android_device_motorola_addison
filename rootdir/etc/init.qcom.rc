@@ -199,6 +199,7 @@ on boot
 
     # FPC home button permissions
     chown system system /sys/homebutton/enable
+	chown system system /sys/homebutton/key
 
     # Display
     chown system graphics /sys/class/graphics/fb1/hpd
