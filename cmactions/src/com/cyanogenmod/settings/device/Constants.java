@@ -36,11 +36,17 @@ public class Constants {
     // List of keys
     public static final String FP_KEYS = "fp_keys";
 
+    // Wakeup key
+    public static final String FP_HOME_WAKEUP_KEY = "fp_home_wakeup";
+
     // Swap nodes
     public static final String FP_HOME_NODE = "/sys/homebutton/enable";
 
     // Keys nodes
     public static final String FP_KEYS_NODE = "/sys/homebutton/key";
+
+    // Wakeup node
+    public static final String FP_HOME_WAKEUP_NODE = "/sys/homebutton/enable_wakeup";
 
     // Holds <preference_key> -> <proc_node> mapping
     public static final Map<String, String> sBooleanNodePreferenceMap = new HashMap<>();
@@ -50,13 +56,16 @@ public class Constants {
 
     public static final String[] sButtonPrefKeys = {
         FP_HOME_KEY,
+        FP_HOME_WAKEUP_KEY,
         FP_KEYS,
     };
 
     static {
         sBooleanNodePreferenceMap.put(FP_HOME_KEY, FP_HOME_NODE);
+		sBooleanNodePreferenceMap.put(FP_HOME_WAKEUP_KEY, FP_HOME_WAKEUP_NODE);
 	    sBooleanNodePreferenceMap.put(FP_KEYS, FP_KEYS_NODE);
         sNodeDefaultMap.put(FP_HOME_KEY, false);
+        sNodeDefaultMap.put(FP_HOME_WAKEUP_KEY, false);
 		sNodeDefaultMap.put(FP_KEYS, "102");
     }
 

@@ -64,6 +64,11 @@
             android:title="Fingerprint as Key"
             android:summary="Use the fingerprint as a key" />
 
+        <SwitchPreference
+            android:key="fp_home_wakeup"
+            android:title="@string/fingerprint_wakeup_title"
+            android:summary="@string/fingerprint_wakeup_summary" />
+
         <ListPreference
             android:dependency="fp_home"
             android:title="Fingerprint Keys"
