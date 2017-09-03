@@ -171,6 +171,9 @@ PRODUCT_PACKAGES += \
     libgnsspps \
     gps.msm8953
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/manifest.xml:system/vendor/manifest.xml
+
 # IPA Manager
 #PRODUCT_PACKAGES += \
 #    ipacm \
