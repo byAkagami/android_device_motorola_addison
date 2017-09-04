@@ -39,6 +39,9 @@
 #include "log.h"
 #include "util.h"
 
+namespace android {
+namespace init {
+
 using android::base::GetProperty;
 
 void vendor_load_properties()
@@ -55,4 +58,7 @@ void vendor_load_properties()
     std::string radio = GetProperty("ro.boot.radio", "");
     property_set("ro.hw.device", device.c_str());
     property_set("ro.hw.radio", radio.c_str());
+}
+
+}
 }
